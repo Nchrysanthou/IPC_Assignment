@@ -126,7 +126,7 @@ char getCharOption(const char *entries)
         scanf("%c", &tmp);
 
         // itterate through all valid entries
-        for (i = 0; i < sizeof(entries) / sizeof(entries[0]); i++)
+        for (i = 0; i < sizeof(entries) / sizeof(char); i++)
         {
             // if a valid entry was found
             if (tmp == entries[i])
@@ -138,8 +138,13 @@ char getCharOption(const char *entries)
     return tmp;
 }
 
-char getCString(char *str, int min, int max)
+char *getCString(char *str, int min, int max)
 {
-    str = malloc(7);
-    printf("\n%s\n", *str);
+    // Wait a fucking minute there is no way that he send \0 as a value
+    // char tmp[max + 1];
+    printf("\n\n%s\n\n", str);
+    // printf("%s", *str);
+    // scanf("%s[^\n]", tmp);
+    // return *tmp;
+    return "test";
 }

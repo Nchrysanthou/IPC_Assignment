@@ -22,7 +22,7 @@
 
 #include <stdio.h>
 
-#include "commonHelpers.c" //TODO: return back to header after
+#include "commonHelpers.h"
 
 // -----------------------------------------
 // Function Prototypes

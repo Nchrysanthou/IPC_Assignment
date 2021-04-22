@@ -15,7 +15,7 @@ int getPositiveInteger();
 double getDouble();
 double getPositiveDouble();
 int getIntFromRange(int min, int max);
-char getCharOption(const char valid[]);
-char getCString(char *str, int min, int max);
+char getCharOption(const char *entries);
+char *getCString(char *str, int min, int max);
 
 #endif
