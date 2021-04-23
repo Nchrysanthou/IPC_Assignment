@@ -1,6 +1,6 @@
 // ===================================================================================
 //
-//  Assignment:  1
+//  Assignment:
 //  Milestone:   1
 //  Description: Main logic/tester
 //

@@ -138,13 +138,23 @@ char getCharOption(const char *entries)
     return tmp;
 }
 
-char *getCString(char *str, int min, int max)
+char getCString(char *str, int min, int max)
 {
-    // Wait a fucking minute there is no way that he send \0 as a value
-    // char tmp[max + 1];
-    printf("\n\n%s\n\n", str);
-    // printf("%s", *str);
-    // scanf("%s[^\n]", tmp);
-    // return *tmp;
-    return "test";
+    int i;
+    char tmp[max + 1];
+    bool valid = false;
+
+    clearStandardInputBuffer();
+
+    do
+    {
+
+        scanf("%[^\n]%*c", tmp); // get string input include spaces
+        while (tmp[i] != '\0')   // while char(index) isn't null terminator
+            i++;                 // increment i;
+        if (i != min && min == max)
+            printf("ERROR: String length must be exactly %d charts: ", min);
+
+    } while (!valid);
+    return *str;
 }

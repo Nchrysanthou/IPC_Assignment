@@ -8,7 +8,7 @@
 #ifndef HELPER_H
 #define HELPER_H
 int currentYear(void);
-void clearStanadardInputBuffer(void);
+void clearStandardInputBuffer(void);
 
 int getInteger();
 int getPositiveInteger();
@@ -16,6 +16,6 @@ double getDouble();
 double getPositiveDouble();
 int getIntFromRange(int min, int max);
 char getCharOption(const char *entries);
-char *getCString(char *str, int min, int max);
+char getCString(char *str, int min, int max);
 
 #endif
